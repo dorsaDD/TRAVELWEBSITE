@@ -219,10 +219,10 @@ if (isset($_POST['submit']))
 
 $mql= "insert into users(username , email,password) values('".$username."','".$email."','".md5($password)."')";
 
-
 mysqli_query($db,$mql);
 
 // header("refresh :0.1;url=login.php");
+
 
 
 ?>

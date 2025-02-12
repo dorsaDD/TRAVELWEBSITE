@@ -206,13 +206,35 @@
                 <a href="tel:1234567890">+123-456-7890</a>
             </div>
         </div>
+<?php
+include("connection.php");
+error_reporting(0);
+session_start();
+if (isset($_POST['submit']))
+{
+    $username = $_POST['username'];
+    $email =$_post['email'];
+    $password = $_post['password'];
+}
+
+$mql= "insert into users(username , email,password) values('".$username."','".$email."','".md5($password)."')";
+
+
+mysql_query($db,$mql);
+
+header("refresh :0.1;url=login.php");
+
+
+?>
+
+
         <div class="login-box">
-            <h3>Login</h3>
-            <form action="">
-                <input type="email" class="box" placeholder="Enter your email">
-                <input type="text" class="box" placeholder="Enter your username">
-                <input type="password" class="box" placeholder="Enter your password">
-                <input type="submit" value="Login" class="border-btn">
+            <h3>Login66</h3>
+            <form action="" method = "post" >
+                <input type="email" class="box"  name="email" placeholder="Enter your email">
+                <input type="text" class="box" name="username" placeholder="Enter your username">
+                <input type="password" class="box"  name="password" placeholder="Enter your password">
+                <input type="submit" id ="buttn" name = "submit" value="Login" class="border-btn">
             </form>
         </div>
     </div>

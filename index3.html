@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barcelona</title>
+
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #f36507;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .attractions {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .attractions h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .attraction {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .attraction img {
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 1.5rem;
+            width: 60%;
+        }
+
+        .content h3 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Barcelona</h1>
+    </header>
+
+    <section class="attractions">
+        <h2>Top Attractions</h2>
+
+        <div class="attraction">
+            <img src="images/sagrada.jpg" alt="">
+            <div class="content">
+                <h3>La Sagrada Familia</h3>
+                <p>Designed by Antoni Gaudí, this iconic basilica is known for its stunning architecture and intricate details. It's a must-see landmark in Barcelona, still under construction after more than a century.</p>
+            </div>
+        </div>
+
+        <div class="attraction">
+            <img src="images/guell.jpg" alt="">
+            <div class="content">
+                <h3>Park Güell</h3>
+                <p>A colorful public park designed by Gaudí, offering whimsical mosaics, unique sculptures, and panoramic views of Barcelona. It’s a UNESCO World Heritage site full of creativity and nature.</p>
+            </div>
+        </div>
+
+        <div class="attraction">
+            <img src="images/casa-batllo.jpeg" alt="">
+            <div class="content">
+                <h3>Casa Batlló</h3>
+                <p>This unique building, designed by Gaudí, is famous for its vibrant colors and organic shapes. It’s a masterpiece of modernist architecture and a UNESCO World Heritage site.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

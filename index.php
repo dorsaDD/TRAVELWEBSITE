@@ -231,7 +231,7 @@ mysqli_query($db,$mql);
 
 
         <div class="login-box">
-            <h3>Login66</h3>
+            <h3>Login</h3>
             <form action="" method = "post" >
                 <input type="email" class="box"  name="email" placeholder="Enter your email">
                 <input type="text" class="box" name="username" placeholder="Enter your username">

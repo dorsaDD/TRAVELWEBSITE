@@ -3,11 +3,11 @@
 $servername="localhost";
 $username="root";
 $password = "";
-$dbname="traveltime"
+$dbname="traveltime";
 
-$db=mysql_connect($servername,$username,$password,$dbname);
+$db=mysqli_connect($servername,$username,$password,$dbname);
 if (!$db) {
-    die ("connection failed:".mysql_connect_error());
+    die ("connection failed:".mysqli_connect_error());
 }
 
 ?>

@@ -208,7 +208,7 @@
         </div>
 <?php
 include("connection.php");
-error_reporting(0);
+ error_reporting(0);
 session_start();
 if (isset($_POST['submit']))
 {
@@ -220,12 +220,14 @@ if (isset($_POST['submit']))
 $mql= "insert into users(username , email,password) values('".$username."','".$email."','".md5($password)."')";
 
 
-mysql_query($db,$mql);
+mysqli_query($db,$mql);
 
-header("refresh :0.1;url=login.php");
+// header("refresh :0.1;url=login.php");
 
 
 ?>
+
+
 
 
         <div class="login-box">
